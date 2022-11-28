@@ -1,17 +1,18 @@
-# https://stackoverflow.com/questions/287259/minimum-c-make-file-for-linux
-NAME = my_project
+TARGET := arm-td3
 
-FILES = $(shell basename -a $$(ls *.cpp) | sed 's/\.cpp//g')
-SRC = $(patsubst %, %.cpp, $(FILES))
-OBJ = $(patsubst %, %.o, $(FILES))
-HDR = $(patsubst %, -include %.h, $(FILES))
-CXX = g++ -Wall
+CXX := clang++
+CXXFLAGS := -std=c++20 -O3 -Wall -I/usr/local/include -I/opt/homebrew/include
 
-%.o : %.cpp
-	$(CXX) $(HDR) -c -o $@ $<
+FILES := $(shell basename -a $$(ls *.cpp) | sed 's/\.cpp//g')
+SRC := $(patsubst %, %.cpp, $(FILES))
+OBJ := $(patsubst %, %.o, $(FILES))
+HDR := $(patsubst %, -include %.h, $(FILES))
+
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) $(HDR) -c -o $@ $<
 
 build: $(OBJ)
-	$(CXX) -o $(NAME) $(OBJ)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJ)
 
 clean:
-	rm -vf $(NAME) $(OBJ)
+	rm -vf $(TARGET) $(OBJ)
