@@ -1,0 +1,114 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "cgal_viewer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_CGAL_TARGETS::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_CGAL_TARGETS-Release-bd86e2258adbc63cd1f5.json",
+					"name" : "ALL_CGAL_TARGETS",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CGAL_Qt5_moc_and_resources::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CGAL_Qt5_moc_and_resources-Release-5595bff8d8b22af70f29.json",
+					"name" : "CGAL_Qt5_moc_and_resources",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CGAL_Qt5_moc_and_resources_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CGAL_Qt5_moc_and_resources_autogen-Release-da956be82cf28d7a41a1.json",
+					"name" : "CGAL_Qt5_moc_and_resources_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cgal_check_build_system::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cgal_check_build_system-Release-8068ab6349251dc99046.json",
+					"name" : "cgal_check_build_system",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cgal_grid_simplifier::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cgal_grid_simplifier-Release-158cc615b9fb228aa613.json",
+					"name" : "cgal_grid_simplifier",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cgal_viewer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cgal_viewer-Release-565c59a21c65f872e7f4.json",
+					"name" : "cgal_viewer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cgal_wlop_simplifier::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cgal_wlop_simplifier-Release-dbd785e67c1d5e85d909.json",
+					"name" : "cgal_wlop_simplifier",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/bastiensoucasse/Developer/AR/cgal/build",
+		"source" : "/Users/bastiensoucasse/Developer/AR/cgal"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
