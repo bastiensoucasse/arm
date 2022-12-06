@@ -6,7 +6,7 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
-    wf_merge("data/prism_01.obj", "data/pyramid_01.obj", "output/merge_prism_01_pyramid_01.obj");
-    wf_merge_multiple_vertices("data/merge_prism_01_pyramid_01.obj", "output/merge_multiple_vertices_prism_01_pyramid_01.obj");
+    // wf_merge("prism_prism_shell/prism.obj", "prism_prism_shell/prism_shell.obj", "prism_prism_shell/merge_manifold.obj");
+    wf_merge_multiple_vertices("plant/cubicuboctahedron.obj", "plant/cubicuboctahedron_nm.obj");
     return EXIT_SUCCESS;
 }
